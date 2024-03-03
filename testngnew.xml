@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+   <listener class-name="com.selenium.automation.listenseres.Test_Listenere"/>
+ </listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="Valid_userName" value="Yeteendra"/>
+<parameter name="Valid_Password" value="Ram@2137"/>
+<parameter name="invalid_username" value="sachin10"/>
+<parameter name="invalid_Password" value="abcd@1234"/>
+    <classes>
+      <class name="com.selenium.automation.application_login_test"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="shop page test">
+<parameter name="username" value="Yeteendra"/>
+<parameter name="password" value="Ram@2137"/>
+<classes>
+<class name="com.selenium.automation.Shop_page_test"/>
+</classes>
+</test>
+</suite> <!-- Suite -->
+

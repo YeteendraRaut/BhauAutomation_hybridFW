@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+<listeners>
+<listener class-name="com.selenium.automation.listenseres.Test_Listenere"/>
+</listeners>
+<!--  Test  -->
+<test thread-count="5" name="shop page test">
+<parameter name="username" value="Vinay7"/>
+<parameter name="password" value="Test@123"/>
+<classes>
+<class name="com.selenium.automation.Shop_page_test"/>
+</classes>
+</test>
+<!--  Test  -->
+</suite>
+<!--  Suite  -->
